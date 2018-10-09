@@ -9,7 +9,7 @@ class App extends Component {
       <div>
         <div className="App">
           <Header
-            firstP="Hi there!"
+            firstP="Header Title!"
           />
         </div>
         <main>
