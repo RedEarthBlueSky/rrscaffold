@@ -1,0 +1,10 @@
+  .containerStyle {
+    border-bottom: 0;
+    border-color: #ddd;
+    border-radius: 2px;
+    border-width: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.50);
+  }

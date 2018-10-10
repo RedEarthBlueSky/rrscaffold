@@ -1,12 +1,13 @@
 import React from 'react';
 //  add line for continuity with React Native
+import ListNode from './ListNode';
 
 const ListItem = (props) => {
   const { title } = props.listItem;
   return (
-    <div>
+    <ListNode>
       <p>{title}</p>
-    </div>
+    </ListNode>
   );
 };
 
