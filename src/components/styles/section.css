@@ -1,0 +1,9 @@
+
+  .sectionWrapper {
+    border-bottom: 1px solid #b8b894;
+    background-color: #f2f2f2;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px;
+    position: relative;
+  }

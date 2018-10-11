@@ -1,6 +1,6 @@
+//  Pass data into ListItems
 import React, { Component } from 'react';
 import axios from 'axios';
-
 import url from '../config/config';
 import ListItem from './ListItem';
 //  pad the code to make it line by line with Native MainApp

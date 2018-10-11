@@ -6,7 +6,7 @@ import List from './components/List';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className='Wrapper'>
         <div className="App">
           <Header
             firstP="Header Title!"

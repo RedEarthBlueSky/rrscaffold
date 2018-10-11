@@ -1,4 +1,4 @@
-//  ListNode is basically the <li> to a <ul> list
+//  Styling wrapper for ListItem Content
 import React from 'react';
 //  line compliant with React Native config
 import './styles/node.css';
