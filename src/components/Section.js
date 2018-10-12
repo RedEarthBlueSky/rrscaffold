@@ -2,12 +2,12 @@ import React from 'react';
 //  additional code for react native
 import './styles/section.css';
 
-const ListItemSection = () => {
+const Section = (props) => {
   return (
     <div className='sectionWrapper'>
-      <p>React List Item Section</p>
+      {props.children}
     </div>
   );
 };
 
-export default ListItemSection;
+export default Section;

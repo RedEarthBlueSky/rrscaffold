@@ -1,9 +1,10 @@
 //  Styling wrapper for ListItem Content
+//  could be called the List Item Content Wrapper
 import React from 'react';
 //  line compliant with React Native config
 import './styles/node.css';
 
-const Item = (props) => {
+const Wrapper = (props) => {
   return (
     <div className='containerStyle'>
       {props.children}
@@ -11,4 +12,4 @@ const Item = (props) => {
   );
 };
 
-export default Item;
+export default Wrapper;

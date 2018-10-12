@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import url from '../config/config';
-import ListItem from './ListItem';
+import Item from './Item';
 //  pad the code to make it line by line with Native MainApp
 
 class List extends Component {
@@ -22,7 +22,7 @@ class List extends Component {
     if(this.state.listItems !== null) // finds an error first render
       return this.state.listItems.map(
         listItem =>
-          <ListItem key={listItem.title} listItem={listItem}/>
+          <Item key={listItem.title} listItem={listItem}/>
       );
   }
 
