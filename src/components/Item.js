@@ -5,6 +5,7 @@ import React from 'react';
 import Wrapper from './Wrapper';
 import ItemHeader from './ItemHeader';
 import Section from './Section';
+import Button from './Button';
 import './styles/item.css';
 
 const ListItem = (props) => {
@@ -16,13 +17,14 @@ const ListItem = (props) => {
         thumbnail_image={thumbnail_image}
         title={title}
       />
-    <Section>
-      <img
-        alt={title}
-        className='mainImageStyles'
-        src={image}
-      />
-    </Section>
+      <Section>
+        <img
+          alt={title}
+          className='mainImageStyles'
+          src={image}
+        />
+      </Section>
+      <Button />
     </Wrapper>
   );
 };

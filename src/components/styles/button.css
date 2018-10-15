@@ -1,0 +1,18 @@
+.buttonStyle {
+  align-self: stretch;
+  background-color: #fff;
+  border-color: #007aff;
+  border-radius: 5px;
+  border-width: 1px;
+  flex: 1;
+  justify-content: center;
+  margin: 0 5px;
+  padding: 4px;
+}
+
+.textStyle {
+  color: #007aff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10;
+}
