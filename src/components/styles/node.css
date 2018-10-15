@@ -3,8 +3,9 @@
     border-color: #ddd;
     border-radius: 2px;
     border-width: 1px;
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.50);
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 10px;
-    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.50);
+    width: 50%;
   }

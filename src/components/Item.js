@@ -3,15 +3,26 @@
 import React from 'react';
 //  add line for continuity with React Native
 import Wrapper from './Wrapper';
+import ItemHeader from './ItemHeader';
 import Section from './Section';
+import './styles/item.css';
 
 const ListItem = (props) => {
-  const { title } = props.listItem;
+  const { title, artist, image, thumbnail_image } = props.listItem;
   return (
     <Wrapper>
-      <Section>
-        <p>{title}</p>
-      </Section>
+      <ItemHeader
+        artist={artist}
+        thumbnail_image={thumbnail_image}
+        title={title}
+      />
+    <Section>
+      <img
+        alt={title}
+        className='mainImageStyles'
+        src={image}
+      />
+    </Section>
     </Wrapper>
   );
 };

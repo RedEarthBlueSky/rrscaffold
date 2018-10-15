@@ -1,0 +1,26 @@
+
+  .headerContentStyle {
+    background-color: #f7eff1;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .headerText {
+    font-size: 18px;
+  }
+
+  .sectionWrapper {
+    display: flex;
+  }
+
+  .thumbNailStyle {
+    height: 50px;
+    width: 50px;
+  }
+
+  .thumbNailContainer {
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
