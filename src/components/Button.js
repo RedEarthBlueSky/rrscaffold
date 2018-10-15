@@ -2,23 +2,24 @@ import React from 'react';
 import Section from './Section';
 import './styles/button.css';
 
-function handleClick(e) {
-  e.preventDefault();
-  console.log('React Button Clicked');
-}
-
-const Button = () => {
+const Button = (props) => {
+  const { message, target, type, url } = props;
   return (
     <Section>
-      <button
-        className='buttonStyle'
-        onClick={handleClick}
-        type='button'
-      >
-        <div className='textStyle'>
-          React Click Me!
-        </div>
-      </button>
+        <button
+          className='buttonStyle'
+          type={type}
+        >
+          <a
+            href={url}
+            target={target}
+            style={{ textDecoration: 'none' }}
+          >
+            <div className='textStyle'>
+              {message}
+            </div>
+          </a>
+        </button>
     </Section>
   );
 };

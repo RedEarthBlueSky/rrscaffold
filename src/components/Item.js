@@ -8,8 +8,8 @@ import Section from './Section';
 import Button from './Button';
 import './styles/item.css';
 
-const ListItem = (props) => {
-  const { title, artist, image, thumbnail_image } = props.listItem;
+const ListItem = ({ listItem }) => {
+  const { title, artist, image, thumbnail_image, url } = listItem;
   return (
     <Wrapper>
       <ItemHeader
@@ -24,7 +24,12 @@ const ListItem = (props) => {
           src={image}
         />
       </Section>
-      <Button />
+      <Button
+        message='React Web Me!'
+        type='reset'
+        url={url}
+        target='_blank'
+      />
     </Wrapper>
   );
 };
