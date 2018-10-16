@@ -2,7 +2,7 @@
 //  could be called the List Item Content Wrapper
 import React from 'react';
 //  line compliant with React Native config
-import './styles/node.css';
+import '../styles/node.css';
 
 const Wrapper = (props) => {
   return (
@@ -12,4 +12,4 @@ const Wrapper = (props) => {
   );
 };
 
-export default Wrapper;
+export { Wrapper };

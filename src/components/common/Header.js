@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../images/logo.svg';
-import './styles/header.css';
+import logo from './images/logo.svg';
+import '../styles/header.css';
 
 const Header = (props) => {
   return (
@@ -23,4 +23,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export { Header };

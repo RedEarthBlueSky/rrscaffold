@@ -2,13 +2,10 @@
 //  content within ListNode are passed as props children
 import React from 'react';
 //  add line for continuity with React Native
-import Wrapper from './Wrapper';
-import ItemHeader from './ItemHeader';
-import Section from './Section';
-import Button from './Button';
-import './styles/item.css';
+import { Button, ItemHeader, Section, Wrapper } from './index';
+import '../styles/item.css';
 
-const ListItem = ({ listItem }) => {
+const Item = ({ listItem }) => {
   const { title, artist, image, thumbnail_image, url } = listItem;
   return (
     <Wrapper>
@@ -24,14 +21,16 @@ const ListItem = ({ listItem }) => {
           src={image}
         />
       </Section>
-      <Button
-        message='React Web Me!'
-        type='reset'
-        url={url}
-        target='_blank'
-      />
+      <Section>
+        <Button
+          message='React Web Me!'
+          type='reset'
+          url={url}
+          target='_blank'
+        />
+      </Section>
     </Wrapper>
   );
 };
 
-export default ListItem;
+export { Item };

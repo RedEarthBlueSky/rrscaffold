@@ -1,11 +1,11 @@
 import React from 'react';
-import Section from './Section';
-import './styles/itemHeader.css';
+import { Section } from './index';
+import '../styles/itemHeader.css';
 
 const ItemHeader = (props) => {
   const { title, artist, thumbnail_image } = props;
   return (
-    <Section className='sectionWrapper'>
+    <Section>
       <div className='thumbNailContainer'>
         <img
           alt={artist}
@@ -21,4 +21,4 @@ const ItemHeader = (props) => {
   );
 };
 
-export default ItemHeader;
+export { ItemHeader };

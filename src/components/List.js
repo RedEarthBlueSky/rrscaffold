@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import url from '../config/config';
-import Item from './Item';
+import { Header, Item } from './common';
 //  pad the code to make it line by line with Native MainApp
 
 class List extends Component {
@@ -30,6 +30,9 @@ class List extends Component {
     console.log(this.state.listItems);
     return (
       <div>
+        <Header
+          firstP="Header Title!"
+        />
         {this.renderListItems()}
       </div>
     );

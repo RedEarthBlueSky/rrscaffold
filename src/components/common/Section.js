@@ -1,6 +1,6 @@
 import React from 'react';
 //  additional code for react native
-import './styles/section.css';
+import '../styles/section.css';
 
 const Section = (props) => {
   return (
@@ -10,4 +10,4 @@ const Section = (props) => {
   );
 };
 
-export default Section;
+export { Section };
