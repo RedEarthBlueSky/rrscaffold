@@ -6,4 +6,29 @@
   left: 0;
   top:0;
   width: 60%;
+  max-width: 400px;
+  z-index: 200;
+}
+
+.side_drawer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.side_drawer li {
+  margin: 0.5rem 0;
+}
+
+.side_drawer a {
+  color: #521751;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.side_drawer a:hover,
+.side_drawer a:active {
+  color: #fa923f;
 }
