@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './images/logo.svg';
 import '../styles/header.css';
 
 const Header = (props) => {
@@ -7,7 +6,6 @@ const Header = (props) => {
     <header
       className="App-header"
     >
-      <img src={logo} className="App-logo" alt="logo" />
       <p className="P-style">
         {props.firstP}
       </p>

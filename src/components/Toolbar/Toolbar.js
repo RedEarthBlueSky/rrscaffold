@@ -1,11 +1,20 @@
 import React from 'react';
 import './Toolbar.css';
+import logo from '../common/images/logo.svg';
+import DrawerToggleButton from '../SlideDrawer/DrawerToggleButton';
 
 const Toolbar = props => (
   <header className='toolbar'>
+    <div>This toolbar is a from scratch build!</div>
     <nav className='toolbar_navigation'>
-      <div className='toolbar_logo'><a href='/'>The Logo</a></div>
-      <div>This toolbar is a from scratch build!</div>
+      <div>
+        <DrawerToggleButton />
+      </div>
+      <div className='toolbar_logo'>
+        <a href='/'>
+          <img src={logo} className="App-logo" alt="logo" />
+        </a>
+      </div>
       <div className='toolbar_navigatin-items'>
         <ul>
           <li><a href='/'>Main Page</a></li>
