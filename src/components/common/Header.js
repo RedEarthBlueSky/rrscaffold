@@ -1,23 +1,18 @@
 import React from 'react';
 import '../styles/header.css';
+import ToolBar from '../Toolbar';
 
 const Header = (props) => {
   return (
-    <header
+    <div
       className="App-header"
     >
+
       <p className="P-style">
         {props.firstP}
       </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Some Link
-      </a>
-    </header>
+      <ToolBar />
+    </div>
   );
 };
 

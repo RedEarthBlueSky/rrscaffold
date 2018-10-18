@@ -11,7 +11,11 @@ const Toolbar = props => (
         <DrawerToggleButton />
       </div>
       <div className='toolbar_logo'>
-        <a href='/'>
+        <a 
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={logo} className="App-logo" alt="logo" />
         </a>
       </div>
