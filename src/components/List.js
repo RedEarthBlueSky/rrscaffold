@@ -1,7 +1,7 @@
 //  Pass data into ListItems
 import React, { Component } from 'react';
 import axios from 'axios';
-import url from '../config/config';
+import Config from '../config/config';
 import { Header, Item } from './common';
 //  pad the code to make it line by line with Native MainApp
 
@@ -14,7 +14,7 @@ class List extends Component {
   }
 
   componentWillMount() {
-    axios.get(url)
+    axios.get(Config.MusicAlbumsURL)
       .then(response => this.setState({ listItems: response.data }));
   }
 
@@ -27,12 +27,9 @@ class List extends Component {
   }
 
   render() {
-    console.log(this.state.listItems);
     return (
       <div>
-        <Header
-          firstP="Header Title!"
-        />
+        <Header firstP="Header Title!"/>
         {this.renderListItems()}
       </div>
     );
