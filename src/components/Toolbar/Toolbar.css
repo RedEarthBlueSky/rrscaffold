@@ -28,6 +28,13 @@
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  .toolbar_navigation-items,
+  .toolbar_navigatin-items ul {
+    display: none;
+  }
+}
+
 .toolbar_navigatin-items li {
   padding:0 0.5rem;
 }

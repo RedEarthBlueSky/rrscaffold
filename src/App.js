@@ -20,12 +20,15 @@ class App extends Component {
     });
   };
 
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false });
+  };
+
   render() {
-    let sideDrawer, backDrop;
+    let backDrop;
 
     if (this.state.sideDrawerOpen) {
-      sideDrawer = <SideDrawer />;
-      backDrop = <BackDrop />;
+      backDrop = <BackDrop click={this.backdropClickHandler}/>;
     }
 
     return (
@@ -33,7 +36,7 @@ class App extends Component {
           {backDrop}
           <Header firstP="Header Title!"/>
           <ToolBar drawerClickHandler={this.drawerToggleClickHandler}/>
-          {sideDrawer}
+          <SideDrawer show={this.state.sideDrawerOpen}/>
           <List />
       </div>
     );

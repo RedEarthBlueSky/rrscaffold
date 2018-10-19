@@ -1,6 +1,6 @@
 .side_drawer {
   background-color: white;
-  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.4);
   height: 100vh;
   position: fixed;
   left: 0;
@@ -8,6 +8,18 @@
   width: 60%;
   max-width: 400px;
   z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+@media (min-width: 769px) {
+  .side_drawer {
+    display: none;
+  }
+}
+
+.side_drawer.open {
+  transform: translateX(0);
 }
 
 .side_drawer ul {

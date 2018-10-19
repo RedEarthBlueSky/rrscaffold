@@ -22,3 +22,9 @@
   margin: 2px 0;
   width: 35px;
 }
+
+@media (min-width: 769px) {
+  .toggle-button {
+    display: none;
+  }
+}
