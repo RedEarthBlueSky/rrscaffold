@@ -1,3 +1,4 @@
+// Toolbar
 import React from 'react';
 import './Toolbar.css';
 import logo from '../common/images/logo.svg';
@@ -8,10 +9,10 @@ const Toolbar = props => (
     <div>This toolbar is a from scratch build!</div>
     <nav className='toolbar_navigation'>
       <div>
-        <DrawerToggleButton />
+        <DrawerToggleButton click={props.drawerClickHandler}/>
       </div>
       <div className='toolbar_logo'>
-        <a 
+        <a
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
