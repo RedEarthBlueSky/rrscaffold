@@ -1,7 +1,7 @@
 // Toolbar
 import React from 'react';
 import './Toolbar.css';
-import logo from '../common/images/logo.svg';
+import logo from '../images/logo.svg';
 import DrawerToggleButton from '../DrawerToggleButton/DrawerToggleButton';
 
 const Toolbar = props => (
