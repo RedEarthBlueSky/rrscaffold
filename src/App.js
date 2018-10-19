@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './styles/App.css';
 import List from './components/List';
 import SideDrawer from './components/SideDrawer/SideDrawer';
-import BackDrop from './components/BackDrop';
-import { Header } from './components/common';
-import ToolBar from './components/Toolbar';
+import BackDrop from './components/BackDrop/BackDrop';
+import { Header } from './components/common/';
+import ToolBar from './components/Toolbar/Toolbar';
 
 class App extends Component {
   constructor(props) {
